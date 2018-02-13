@@ -11,6 +11,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+<<<<<<< HEAD
+=======
+
+import android.widget.EditText;
+>>>>>>> 1a49be56fdee669b860339dfbde65d99e763e330
 import android.widget.TextView;
 
 import com.google.firebase.database.DataSnapshot;
