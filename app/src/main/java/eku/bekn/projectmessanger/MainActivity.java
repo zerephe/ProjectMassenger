@@ -10,12 +10,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-<<<<<<< HEAD
 import android.view.View;
-=======
+
 import android.widget.EditText;
 import android.widget.TextView;
->>>>>>> 29523a949f7a03f344d55be7ae22de9b617b5db0
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -58,11 +56,8 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View view) {
 //              Snackbar.make(view, "Bekn rak", Snackbar.LENGTH_LONG)
 //                        .setAction("Action", null).show();
-<<<<<<< HEAD
-                mRef.setValue("Bekn rak");
-=======
+
                 mRef.setValue("Eku Rak!");
->>>>>>> 29523a949f7a03f344d55be7ae22de9b617b5db0
             }
         });
 
