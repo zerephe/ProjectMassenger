@@ -13,8 +13,14 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+        FirebaseDatabase fBase = FirebaseDatabase.getInstance();
+        final DatabaseReference mRef = fBase.getReference("GetRef");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +33,9 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Bekn rak", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+//              Snackbar.make(view, "Bekn rak", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
+                mRef.setValue("GGWP");
             }
         });
 
